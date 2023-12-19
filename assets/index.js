@@ -8,5 +8,6 @@ import renewable from './renewable.jpg';
 import header from './header.jpg';
 import director from './director.jpg';
 import rkgarg from './rkgarg.jpg';
+import loading from './loading.gif'
 
-export {homeimg, chem, energy, envirnoment, gogreen, nitj, renewable, header, director, rkgarg};
+export {homeimg, chem, energy, envirnoment, gogreen, nitj, renewable, header, director, rkgarg, loading};

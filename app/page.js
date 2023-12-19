@@ -4,9 +4,8 @@ import Image from "next/image";
 import { horizontal, verticle } from "@/components/content";
 
 export default function Home() {
-  return (
+   return (
     <div className="flex flex-col items-center">
-            
       <div className="relative w-[100%] h-[488px]">
         <Image
           src={homeimg}
@@ -46,7 +45,7 @@ export default function Home() {
           <h3 className=" text-2xl font-semibold">APRIL 5-6, 2024</h3>
         </div>
       </div>
-  
+
       <div className="flex flex-wrap flex-row my-5 mt-12 w-full justify-center">
         {horizontal.map((items, ind) => (
           <HorizontalProp
@@ -58,12 +57,52 @@ export default function Home() {
         ))}
       </div>
       <div className=" bg-[#EBF3E8] my-7">
-      <div className="mx-[10%] text-justify items-center flex flex-col my-8 text-red-600">
-      <p className="text-4xl font-semibold italic text-blue-500 my-5"> About Conference</p>
-      <p className="my-3 text-lg">The conference on<span className="italic text-red-700"> "Sustainable Research in Energy and the Environment (SREE-2024)" </span>serves as a platform for scholars, researchers, industry professionals, and policymakers to converge and engage in discussions centered around the critical nexus of energy and environmental sustainability. This gathering aims to foster a collaborative environment where innovative ideas, cutting-edge research, and practical solutions are shared to address the challenges and opportunities in the realms of energy production, consumption, and their impact on the environment. The conference is designed to showcase the latest advancements in sustainable energy technologies, explore strategies for minimizing environmental footprints, and promote interdisciplinary approaches to tackle the pressing issues related to climate change and resource depletion. Participants will have the opportunity to delve into diverse topics such as renewable energy sources, energy efficiency, environmental conservation, and the intersection of technology and policy for sustainable development.</p>
-      <p className="my-3 text-lg">Through keynote presentations, panel discussions, and interactive sessions, the conference seeks to bridge the gap between theory and practice, providing a comprehensive understanding of the current state of sustainable research in energy and the environment. Attendees will gain insights into emerging trends, share experiences, and contribute to the collective effort aimed at creating a more sustainable and resilient future.</p>
-      <p className="my-3 text-lg"><span className="italic text-red-700">Sustainable Research in Energy and the Environment (SREE-2024) </span> conference is a pivotal event that catalyzes collaboration and knowledge exchange to pave the way for a greener and more sustainable world.</p>
-      </div>
+        <div className="mx-[10%] text-justify items-center flex flex-col my-8 text-red-600">
+          <p className="text-4xl font-semibold italic text-blue-500 my-5">
+            {" "}
+            About Conference
+          </p>
+          <p className="my-3 text-lg">
+            The conference on
+            <span className="italic text-red-700">
+              {" "}
+              "Sustainable Research in Energy and the Environment (SREE-2024)"{" "}
+            </span>
+            serves as a platform for scholars, researchers, industry
+            professionals, and policymakers to converge and engage in
+            discussions centered around the critical nexus of energy and
+            environmental sustainability. This gathering aims to foster a
+            collaborative environment where innovative ideas, cutting-edge
+            research, and practical solutions are shared to address the
+            challenges and opportunities in the realms of energy production,
+            consumption, and their impact on the environment. The conference is
+            designed to showcase the latest advancements in sustainable energy
+            technologies, explore strategies for minimizing environmental
+            footprints, and promote interdisciplinary approaches to tackle the
+            pressing issues related to climate change and resource depletion.
+            Participants will have the opportunity to delve into diverse topics
+            such as renewable energy sources, energy efficiency, environmental
+            conservation, and the intersection of technology and policy for
+            sustainable development.
+          </p>
+          <p className="my-3 text-lg">
+            Through keynote presentations, panel discussions, and interactive
+            sessions, the conference seeks to bridge the gap between theory and
+            practice, providing a comprehensive understanding of the current
+            state of sustainable research in energy and the environment.
+            Attendees will gain insights into emerging trends, share
+            experiences, and contribute to the collective effort aimed at
+            creating a more sustainable and resilient future.
+          </p>
+          <p className="my-3 text-lg">
+            <span className="italic text-red-700">
+              Sustainable Research in Energy and the Environment (SREE-2024){" "}
+            </span>{" "}
+            conference is a pivotal event that catalyzes collaboration and
+            knowledge exchange to pave the way for a greener and more
+            sustainable world.
+          </p>
+        </div>
       </div>
 
       <div className="flex flex-wrap flex-row my-5 w-full px-28 items-center justify-center">
@@ -75,8 +114,7 @@ export default function Home() {
             key={ind}
           />
         ))}
-        </div>
-
+      </div>
     </div>
   );
 }

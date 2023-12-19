@@ -1,6 +1,22 @@
+"use client"
+
+import { useState } from "react";
 import { Navbar, HeaderComp } from "@/components";
+import Upload from "@/components/Upload.jsx";
 
 const page = () => {
+
+const [clicked, setclicked] = useState(false);
+
+  const handleDownload = () => {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = '/resume.pdf'; // Replace with actual path of PDF
+    downloadLink.download = 'example.pdf'; // Specify desired file name
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
+
   return (
     <div>
       <HeaderComp heading={"Abstract Submission"} />
@@ -56,11 +72,12 @@ const page = () => {
         </ul>
 
         <p className="font-medium my-4 text-lg">
-          Template of the extended abstract: Click here
+          Template of the extended abstract: <button onClick={handleDownload} className="italic underline">Click here</button>
         </p>
         <p className="text-lg text-semibold text-red-600 my-4">
-          Submit Abstract to the SREE-2024: Submit Now
-        </p>
+          Submit Abstract to the SREE-2024: <button onClick={()=>setclicked(prev=> !prev)}  className="italic underline">Submit Now</button>
+          </p>
+          {clicked && <Upload/>}
         <p>
           If you encounter any problems using the templates orthe submission
           process, please email the (Dr. Anurag Kumar Tiwari) at

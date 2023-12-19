@@ -20,8 +20,8 @@ const page = () => {
         <p className="font-medium text-lg my-4">Topics of interest include, but are not limited to:</p>
 
         <ul className="list-disc">
-          {callForPaper.map((items) => (
-            <li className="my-3">{items}</li>
+          {callForPaper.map((items, ind) => (
+            <li className="my-3" key={ind}>{items}</li>
           ))}
         </ul>
 

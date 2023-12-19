@@ -6,7 +6,7 @@ const Navbar = () => {
   const [active, setActive] = useState(null);
 
   return (
-    <div className=" bg-[rgba(0,123,191,1)] h-fit w-[100%] px-0 mx-0 flex flex-row justify-between items-center text-white py-2">
+    <div className=" bg-[rgba(0,123,191,1)] h-fit w-[100%] fixed top-0 px-0 mx-0 flex flex-row justify-between items-center text-white py-2 z-10">
       <a href="/"><p className="font-normal text-[15pt] ml-5 w-fit">SREE-2024</p></a>
 
       <ul className="hidden md:visible md:flex flex-row w-[86%] mr-3 justify-between">

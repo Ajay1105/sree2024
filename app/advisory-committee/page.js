@@ -4,10 +4,10 @@ import { advisoryCommittee } from "@/components/content";
 const page = () => {
   return (
     <div>
-      <HeaderComp heading={"Important Dates"} />
+      <HeaderComp heading={"Advisory Committee"} />
       <div className="w-full px-[10%] my-8">
-      {advisoryCommittee.map((items)=>(
-        <p className="my-2 text-lg"><span className="font-semibold">{items.name}</span>,{" "}{items.cllg}</p>
+      {advisoryCommittee.map((items,ind)=>(
+        <p className="my-2 text-lg" key={ind}><span className="font-semibold">{items.name}</span>,{" "}{items.cllg}</p>
       ))}
       </div>
     </div>
