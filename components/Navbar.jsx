@@ -31,15 +31,21 @@ const Navbar = () => {
           <li className="mr-2 lg:mr-0 font-bold text-red-800" onClick={() => setIsOpen(false)}>
             X
           </li>
-          <li className="">Home</li>
-          <li className="">Call For Papers</li>
-          <li className="">Abstract Submission</li>
-          <li className="">Important Dates</li>
-          <li className="">Registration</li>
-          <li className="">Resource Persons</li>
-          <li className="">Organizing Committee</li>
-          <li className="">Advisory Committee</li>
-          <li className="">Contact Us</li>
+          {[
+            "Home",
+            "Call For Papers",
+            "Abstract Submission",
+            "Important Dates",
+            "Registration",
+            "Resource Persons",
+            "Organizing Committee",
+            "Advisory Committee",
+            "Contact Us",
+          ].map((item) => (
+            <li className="" key={`links2-${item}`}>
+            <a href={(item==="Home")?"/":`${item.replace(/\s/g, '-').toLowerCase()}`}>{item}</a>
+            </li>
+          ))}
         </ul>
       ) : (
         <div className="md:hidden white mr-8" onClick={() => setIsOpen(true)}>

@@ -15,12 +15,12 @@ export default function Home() {
           className="absolute w-[100vw] h-[488px] -z-10"
         />
         <div className="text-white flex flex-col w-full h-full items-center justify-center">
-          <h1 className="mb-3 text-4xl font-medium">
+          <h1 className="mb-3 text-2xl md:text-4xl font-medium">
             International conference
           </h1>
-          <p className="mb-3 text-3xl font-medium">(Self-Sponsored)</p>
-          <p className="mb-3 text-2xl font-medium">On</p>
-          <h1 className="mb-3 text-5xl font-medium flex flex-wrap justify-center">
+          <p className="mb-3 text-xl md:text-3xl font-medium">(Self-Sponsored)</p>
+          <p className="mb-3 text-xl md:text-2xl font-medium">On</p>
+          <h1 className="mb-3 text-3xl md:text-5xl font-medium flex flex-wrap justify-center">
             <span className="text-[#00ff00] px-4">
               <span className="text-[#ff0000]">S</span>ustainable{" "}
             </span>
@@ -37,12 +37,12 @@ export default function Home() {
             </span>
             -2024
           </h1>
-          <p className="mb-3 text-2xl font-medium">Jointly Organized by</p>
+          <p className="mb-3 text-2xl font-medium text-[#ffff00] md:text-white">Jointly Organized by</p>
           <h2 className="mb-3 text-2xl font-medium text-[#ffff00] text-center">
             Department of Chemical Engineering & Centre for Energy and
             Environment
           </h2>
-          <h3 className=" text-2xl font-semibold">APRIL 5-6, 2024</h3>
+          <h3 className="text-gray-800 text-2xl font-semibold">APRIL 5-6, 2024</h3>
         </div>
       </div>
 
@@ -105,7 +105,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-wrap flex-row my-5 w-full px-28 items-center justify-center">
+      <div className="flex flex-wrap flex-row my-5 w-full px-10 md:px-28 items-center justify-center">
         {verticle.map((items, ind) => (
           <VerticalProp
             img={items.img}

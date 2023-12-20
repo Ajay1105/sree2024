@@ -6,6 +6,7 @@ import { useState } from "react";
 const Upload = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [uploading, setUploading] = useState(false);
+  const [isUploaded, setIsUploaded] = useState(false);
 
   const handleFileChange = (event) => {
     const file = event.target.files[0];
@@ -29,6 +30,7 @@ const Upload = () => {
         const errorData = await response.json();
         console.error(errorData.error || "Failed to upload file");
       }
+      setIsUploaded(true);
     } catch (error) {
       console.error("Error uploading file:", error);
     }
@@ -42,10 +44,11 @@ const Upload = () => {
         onChange={handleFileChange}
         formEncType="multipart/form-data"
       />
-      {selectedFile && !uploading && (
-        <button onClick={handleUpload}>Upload</button>
+      {selectedFile && !uploading && !isUploaded && (
+        <button onClick={handleUpload} className="ml-5 mt-4 md:mt-0 bg-blue-500 hover:bg-blue-700 text-white font-semibold py-1 px-4 rounded">Upload</button>
       )}
-      {uploading && <Image src={loading} height={50} width={50} alt="uploading"/>}
+      {uploading  && <Image src={loading} className="mt-5 md:mt-0 md:ml-5" height={50} width={50} alt="uploading"/>}
+      {isUploaded  && <p src={loading} className="mt-5 md:mt-0 md:ml-5 font-medium text-green-600 text-xl">Successfully Uploaded</p>}
     </div>
   );
 };
