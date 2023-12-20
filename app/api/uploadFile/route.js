@@ -1,4 +1,3 @@
-// pages/api/uploadFile.js
 import { google } from "googleapis";
 import { NextResponse } from "next/server";
 import { Readable } from 'stream';
@@ -18,29 +17,6 @@ async function authorize() {
   await jwtClient.authorize();
 
   return jwtClient;
-}
-
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
-
-export async function POST(req, res) {
-
-  const formData = await req.formData();
-  const file = formData.get('file');
-  const authClient = await authorize();
-  const bufferFile = Buffer.from(await file.arrayBuffer());
-  const result = await uploadFile(bufferFile, authClient, file.name);
-// console.log(result);
-  return NextResponse.json(
-    {
-      result: result,
-    },
-    { status: 200 }
-  );
-
 }
 
 // A Function that will upload the desired file to google drive folder
@@ -75,4 +51,24 @@ async function uploadFile(uploadedFile, authClient, filename) {
       }
     );
   });
+}
+
+export async function POST(req, res) {
+
+  try{
+  const formData = await req.formData();
+  const file = formData.get('file');
+  const authClient = await authorize();
+  const bufferFile = Buffer.from(await file.arrayBuffer());
+  const result = await uploadFile(bufferFile, authClient, file.name);
+
+  return NextResponse.json(
+    {
+      result: result,
+    },
+    { status: 200 }
+  );
+  }catch(error){
+    console.log(error);
+  }
 }
