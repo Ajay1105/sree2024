@@ -10,7 +10,7 @@ const [clicked, setclicked] = useState(false);
 
   const handleDownload = () => {
     const downloadLink = document.createElement('a');
-    downloadLink.href = '/resume.pdf'; // Replace with actual path of PDF
+    downloadLink.href = '/sample.pdf'; // Replace with actual path of PDF
     downloadLink.download = 'example.pdf'; // Specify desired file name
     document.body.appendChild(downloadLink);
     downloadLink.click();
