@@ -3,7 +3,6 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [active, setActive] = useState(null);
 
   return (
     <div className="bg-[rgba(0,123,191,1)] h-fit w-[100%] fixed top-0 px-0 mx-0 flex flex-row justify-between items-center text-white py-2 z-10">
@@ -21,9 +20,8 @@ const Navbar = () => {
           "Advisory Committee",
           "Contact Us",
         ].map((item) => (
-          <li className="md:mx-1 lg:mx-2" key={`links-${item}`} onClick={()=>setActive(item)}>
+          <li className="md:mx-1 lg:mx-2 hover:text-gray-900" key={`links-${item}`}>
           <a href={(item==="Home")?"/":`${item.replace(/\s/g, '-').toLowerCase()}`}>{item}</a>
-          <div className={`${active==item?"block":"hidden"} underDiv`}/>
           </li>
         ))}
       </ul>
