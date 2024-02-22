@@ -1,8 +1,9 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const VerticalProp = (props) => {
   return (
-    <div className="flex flex-col lg:flex-row px-2 md:px-5 py-4 w-fit h-fit items-center align-middle text-center my-3 md:my-0">
+    <motion.div className="flex flex-col lg:flex-row px-2 md:px-5 py-4 w-fit h-fit items-center align-middle text-center my-3 md:my-0" whileHover={{ scale: 1.1 }}>
       <Image
         src={props.img}
         width={""}
@@ -16,7 +17,7 @@ const VerticalProp = (props) => {
         </p>
         <p className=" text-justify">{props.content}</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

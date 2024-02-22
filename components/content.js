@@ -14,19 +14,19 @@ export const horizontal = [
     img: renewable,
     heading: "Renewable Energy",
     content:
-      "Crucial components of the global effort to transition towards a more sustainable and environmentally friendly energy landscape",
+      "Crucial components of the global effort to transition towards a more sustainable and environmentally friendly energy landscape.",
   },
   {
     img: envirnoment,
     heading: "Environmental Conservation",
     content:
-      "Deliberate and sustainable management, protection, and preservation of natural resources, ecosystems, and biodiversity",
+      "Deliberate and sustainable management, protection, and preservation of natural resources, ecosystems, and biodiversity.",
   },
   {
     img: gogreen,
     heading: "Sustainability",
     content:
-      "Serves as a reminder that every action, no matter how small, can contribute to a more sustainable and resilient planet",
+      "Serves as a reminder that every action, no matter how small, can contribute to a more sustainable and resilient planet.",
   },
 ];
 
@@ -75,6 +75,35 @@ export const callForPaper = [
   "Social aspects of energy transition",
   "Policy, education, and legal aspects of energy transition",
   "Energy for sustainable development",
+  "Renewable Energy Technologies",
+  "Environment Friendly Energy",
+  "Systems Energy Processes and Conversion Systems",
+  "Electro-Mechanical Energy System",
+  "Electro-Chemical Energy System",
+  "Sustainable Transport including",
+  "Electric Vehicles",
+  "Energy Storage",
+  "Biomass and bio-based products",
+  "Climate change & global warming",
+  "Ecology & biodiversity conservation",
+  "Sustainable Electrical Energy Systems",
+  "Intelligent Integration of Renewable Energy Technologies",
+  "Life Cycle Analysis of Energy System",
+  "Hydrogen Energy Technologies",
+  "Environmental Engineering",
+  "Carbon Capture, Storage, Utilizations",
+  "Technologies on Emission Particulates",
+  "Recycling Technologies for Energy and Materials Recovery",
+  "Circular Economy",
+  "Techno-Economics of Energy System ",
+  "Energy Policies and Economics",
+  "Energy systems modeling",
+  "Natural resources and materials for energy systems",
+  "Artificial intelligence and big data for energy transition",
+  "Social aspects of energy transition",
+  "Policy, education, and legal aspects of energy transition",
+  "Energy for sustainable development",
+  "Nano and Bio-Materials",
 ];
 
 export const conferenceChair = [
@@ -137,343 +166,358 @@ export const conferenceOrganizingSecetary = [
     cllg: "Dr B R Ambedkar National Institute of Technology Jalandhar ",
     img: director,
   },
-]
+];
 
 export const localAdvisoryCommitte = [
   {
-    img:rkgarg,
-    name:"Dr Harsh K Verma",
-    desg:"Dean Academic, NITJ",
+    img: rkgarg,
+    name: "Dr Harsh K Verma",
+    desg: "Dean Academic, NITJ",
   },
   {
-    img:rkgarg,
-    name:"Dr S K Sinha",
-    desg:"Dean, Faculty Welfare, NITJ",
+    img: rkgarg,
+    name: "Dr S K Sinha",
+    desg: "Dean, Faculty Welfare, NITJ",
   },
   {
-    img:rkgarg,
-    name:"Dr J N Chakraborty",
-    desg:"Dean Research and Consultancy, NITJ",
+    img: rkgarg,
+    name: "Dr J N Chakraborty",
+    desg: "Dean Research and Consultancy, NITJ",
   },
   {
-    img:rkgarg,
-    name:"Dr Anish Sachdewa",
-    desg:"Dean Student Welfare, NITJ",
+    img: rkgarg,
+    name: "Dr Anish Sachdewa",
+    desg: "Dean Student Welfare, NITJ",
   },
   {
-    img:rkgarg,
-    name:"Dr S P Singh",
-    desg:"Dean Industry & International Affairs, NITJ",
+    img: rkgarg,
+    name: "Dr S P Singh",
+    desg: "Dean Industry & International Affairs, NITJ",
   },
   {
-    img:rkgarg,
-    name:"Dr S Chander",
-    desg:"Dean Planning and Development, NITJ",
+    img: rkgarg,
+    name: "Dr S Chander",
+    desg: "Dean Planning and Development, NITJ",
   },
   {
-    img:rkgarg,
-    name:"Dr A K Agnihotri",
-    desg:"Professor, Civil Engg, NITJ",
+    img: rkgarg,
+    name: "Dr A K Agnihotri",
+    desg: "Professor, Civil Engg, NITJ",
   },
   {
-    img:rkgarg,
-    name:"DrA K Jana",
-    desg:"Professor, Biotechnology, NITJ",
+    img: rkgarg,
+    name: "DrA K Jana",
+    desg: "Professor, Biotechnology, NITJ",
   },
   {
-    img:rkgarg,
-    name:"Dr A Mukhopadhyay",
-    desg:"Professor, Textile, NITJ",
+    img: rkgarg,
+    name: "Dr A Mukhopadhyay",
+    desg: "Professor, Textile, NITJ",
   },
   {
-    img:rkgarg,
-    name:"Dr B S Kaith",
-    desg:"Professor, Chemistry, NITJ",
+    img: rkgarg,
+    name: "Dr B S Kaith",
+    desg: "Professor, Chemistry, NITJ",
   },
   {
-    img:rkgarg,
-    name:"Dr R K Garg",
-    desg:"Professor, I & P Engg., NITJ",
+    img: rkgarg,
+    name: "Dr R K Garg",
+    desg: "Professor, I & P Engg., NITJ",
   },
   {
-    img:rkgarg,
-    name:"Dr Monica Sikka",
-    desg:"Professor & Head ,Textile, NITJ",
+    img: rkgarg,
+    name: "Dr Monica Sikka",
+    desg: "Professor & Head ,Textile, NITJ",
   },
 ];
 
 export const organizingCommitteMembers = [
   {
-    img:rkgarg,
-    name:"Dr Sangeeta Garg",
-    desg:"Professor, NITJ",
+    img: rkgarg,
+    name: "Dr Sangeeta Garg",
+    desg: "Professor, NITJ",
   },
   {
-    img:rkgarg,
-    name:"Dr Raj Kumar Arya",
-    desg:"Associate Professor, NITJ ",
+    img: rkgarg,
+    name: "Dr Raj Kumar Arya",
+    desg: "Associate Professor, NITJ ",
   },
   {
-    img:rkgarg,
-    name:"Dr Jatinder Kumar Ratan",
-    desg:"Associate Professor, NITJ",
+    img: rkgarg,
+    name: "Dr Jatinder Kumar Ratan",
+    desg: "Associate Professor, NITJ",
   },
   {
-    img:rkgarg,
-    name:"Dr Amit D Saran",
-    desg:"Assistant Professor, NITJ",
+    img: rkgarg,
+    name: "Dr Amit D Saran",
+    desg: "Assistant Professor, NITJ",
   },
   {
-    img:rkgarg,
-    name:"Dr Nitin N Pandhare",
-    desg:"Assistant Professor, NITJ",
+    img: rkgarg,
+    name: "Dr Nitin N Pandhare",
+    desg: "Assistant Professor, NITJ",
   },
   {
-    img:rkgarg,
-    name:"Dr Anjireddy Bhavanam",
-    desg:"Assistant Professor, NITJ",
+    img: rkgarg,
+    name: "Dr Anjireddy Bhavanam",
+    desg: "Assistant Professor, NITJ",
   },
   {
-    img:rkgarg,
-    name:"Dr Shashikant Yadav",
-    desg:"Assistant Professor, NITJ",
+    img: rkgarg,
+    name: "Dr Shashikant Yadav",
+    desg: "Assistant Professor, NITJ",
   },
   {
-    img:rkgarg,
-    name:"Dr Deepak Sahu",
-    desg:"Assistant Professor, NITJ",
+    img: rkgarg,
+    name: "Dr Deepak Sahu",
+    desg: "Assistant Professor, NITJ",
   },
   {
-    img:rkgarg,
-    name:"Dr D Giribabu",
-    desg:"Assistant Professor, NITJ",
+    img: rkgarg,
+    name: "Dr D Giribabu",
+    desg: "Assistant Professor, NITJ",
   },
 ];
 
 export const advisoryCommittee = [
-
   {
-    name:"Dr Ajay K Dalai",
-    cllg:"University of Sasketchwan, Canada"
+    name: "Dr Ajay K Dalai",
+    cllg: "University of Sasketchwan, Canada",
   },
   {
-    name:"Dr Ambrish Singh",
-    cllg:"Southwest Petroleum Univ., China"
+    name: "Dr Ashutosh Tiwari",
+    cllg: "Director, IAAM, Sweden",
   },
   {
-    name:"Dr Ram B.Gupta",
-    cllg:"Virginia Commonwealth University USA"
+    name: "Dr Ashwani K. Gupta",
+    cllg: "University of Maryland, USA",
   },
   {
-    name:"Dr S B Jonnalagadda",
-    cllg:"University of Kwazulu-Natal,South Africa"
+    name: "Dr Ramesh Agarwal",
+    cllg: "Washington University, St. Louis, USA",
   },
   {
-    name:"Dr Ujjal Ghosh",
-    cllg:"Qatar University, Qatar"
+    name: "Dr Y K Mishra",
+    cllg: "University of Southern Denmark (SDU), Denmark",
   },
   {
-    name:"Dr Vishnu Pareek",
-    cllg:"Curtin University, Australia"
+    name: "Dr Ram B.Gupta",
+    cllg: "Virginia Commonwealth University USA",
   },
   {
-    name:"Dr Wan K Jo",
-    cllg:"Kyungpook, National Univ, S. Korea"
+    name: "Dr S B Jonnalagadda",
+    cllg: "University of Kwazulu-Natal,South Africa",
   },
   {
-    name:"Dr K K Pant",
-    cllg:"Director IITRoorkee"
+    name: "Dr Vishnu Pareek",
+    cllg: "Curtin University, Australia",
   },
   {
-    name:"Dr Jayant K. Singh",
-    cllg:"IITKanpur"
+    name: "Dr Chunfei Wu",
+    cllg: "Queen's University Belfast, UK",
   },
   {
-    name:"Dr Vimal Kumar Srivastava",
-    cllg:"IITKanpur"
+    name: "Dr Wan K Jo",
+    cllg: "Kyungpook, National Univ, S. Korea",
   },
   {
-    name:"Dr Jayant K. Singh",
-    cllg:"IITRoorkee"
+    name: "Dr Mohamed Abdel Salam",
+    cllg: "King Abdulaziz University, KSA",
   },
   {
-    name:"Dr Shishir Sinha",
-    cllg:"IITRoorkee"
+    name: "Dr Virendra Kumar Vijay",
+    cllg: "Dr Virendra Kumar Vijay",
   },
   {
-    name:"Dr Kaustubha Mohanty",
-    cllg:"IITGuwahati"
+    name: "Dr Ashok Pandey",
+    cllg: "CSIR-IITR, Lucknow",
   },
   {
-    name:"Dr Dipankar Bandyopadhyay",
-    cllg:"IITGuwahati"
+    name: "Dr K K Pant",
+    cllg: "Director IIT Roorkee",
   },
   {
-    name:"Dr Anil Verma",
-    cllg:"IITDelhi"
+    name: "Dr Thallada Bhaskar",
+    cllg: "IIP Dehradun",
   },
   {
-    name:"Dr Nishith Verma",
-    cllg:"IITKanpur"
+    name: "Dr Jayant K. Singh",
+    cllg: "IIT Kanpur",
   },
   {
-    name:"Dr Chandra Shekhar Sharma",
-    cllg:"IITHyderabad"
+    name: "Dr Nishith Verma",
+    cllg: "IIT Kanpur",
   },
   {
-    name:"Dr Raju Kumar Gupta",
-    cllg:"IITKanpur"
+    name: "Dr G. Sridhar",
+    cllg: "DG, NIBE Kapurthala",
   },
   {
-    name:"Dr. Pradeep Kumar Mishra",
-    cllg:"IIT BHU"
+    name: "Dr Shishir Sinha",
+    cllg: "DG, CIPET, India",
   },
   {
-    name:"Dr Sasidhar Gumma",
-    cllg:"IIT Tirupati"
+    name: "Dr Vimal Kumar Srivastava",
+    cllg: "IIT Roorkee",
   },
   {
-    name:"Dr R S Singh",
-    cllg:"IIT BHU"
+    name: "Dr Chetan Singh Solanki (Solar Gandhi)",
+    cllg: "IIT Bombay",
   },
   {
-    name:"Dr. Rajesh Kumar Upadhyay",
-    cllg:"IIT BHU"
+    name: "Dr Animangsu Ghatak",
+    cllg: "IIT Kanpur",
   },
   {
-    name:"Dr Nanda Kishore",
-    cllg:"IIT Guwahati"
+    name: "Dr Kaustubha Mohanty",
+    cllg: "IIT Guwahati",
   },
   {
-    name:"Dr Amit K Dhiman",
-    cllg:"IIT Roorkee"
+    name: "Dr Vivek Kumar",
+    cllg: "CRDT IIT Delhi",
   },
   {
-    name:"Dr V K Saxena",
-    cllg:"IIT ISM Dhanbad"
+    name: "Dr Dipankar Bandyopadhyay",
+    cllg: "IIT Guwahati",
   },
   {
-    name:"Dr S C Jain",
-    cllg:"Panjab University, Chandigarh"
+    name: "Dr Anil Verma",
+    cllg: "IIT Delhi",
   },
   {
-    name:"Dr Sujoy Kumar Samanta",
-    cllg:"IIT Patna"
+    name: "Dr Niket Kaisare",
+    cllg: "IIT Madras",
   },
   {
-    name:"Dr S. P. Chaurasia",
-    cllg:"MNIT, Jaipur"
+    name: "Dr Chandra Shekhar Sharma",
+    cllg: "IIT Hyderabad",
   },
   {
-    name:"Dr ThalladaBhaskar",
-    cllg:"IIP Dehradun"
+    name: "Dr Raju Kumar Gupta",
+    cllg: "IIT Kanpur",
   },
   {
-    name:"Dr S K Puri",
-    cllg:"IOCL, R&D Centre, Faridabad"
+    name: "Dr. Pradeep Kumar Mishra",
+    cllg: "IIT BHU",
   },
   {
-    name:"Dr Kailash Wasewar",
-    cllg:"VNIT Nagpur"
+    name: "Dr Sasidhar Gumma",
+    cllg: "IIT Tirupati",
   },
   {
-    name:"Dr Bidyut Majumdar",
-    cllg:"NIT Raipur"
+    name: "Dr R S Singh",
+    cllg: "IIT BHU",
   },
   {
-    name:"Dr Manish Vashist",
-    cllg:"VNIT Nagpur"
+    name: "Dr. Rajesh Kumar Upadhyay",
+    cllg: "IIT BHU",
   },
   {
-    name:"Dr Kailash Wasewar",
-    cllg:"NIT Jaipur"
+    name: "Dr. Sanjay Bhardwaj",
+    cllg: "Scientist 'G',ARCI Hyderabad",
   },
   {
-    name:"Dr Vikas Sangal",
-    cllg:"NIT Jaipur"
+    name: "Dr Satinder Kumar Sharma",
+    cllg: "IIT Mandi",
   },
   {
-    name:"Mr Praveen Saxena",
-    cllg:"Director & CEO Blast Carboblocks Pvt.Ltd"
+    name: "Dr Amit K Dhiman",
+    cllg: "IIT Roorkee",
   },
   {
-    name:"Dr Sanjay Bhardwaj",
-    cllg:"Scientist-F, ARCI, Haderabad"
+    name: "Dr. Nageswara Rao Peela",
+    cllg: "IIT Guwahati",
   },
   {
-    name:"Dr ApurbaDey",
-    cllg:"NIT Durgapur"
+    name: "Dr Sujoy Kumar Samanta",
+    cllg: "IIT Patna",
   },
   {
-    name:"Dr Asim K De",
-    cllg:"University of Calcutta, Kolkata"
+    name: "Dr Ruben Sudhakar D",
+    cllg: "NIT Trichurapalli",
   },
   {
-    name:"Dr M Rajasimman",
-    cllg:"Annamalai University, Chidambaram"
+    name: "Dr Kailash Wasewar",
+    cllg: "VNIT Nagpur",
   },
   {
-    name:"Dr Madhu Agarwal",
-    cllg:"MNIT Jaipur"
+    name: "Dr Bidyut Majumdar",
+    cllg: "NIT Raipur",
   },
   {
-    name:"Dr P Kalaichelvi",
-    cllg:"NIT Trichurapalli"
+    name: "Dr Manish Vashist",
+    cllg: "VNIT Nagpur",
   },
   {
-    name:"Dr R K Gupta",
-    cllg:"Thapar University, Patiala"
+    name: "Dr Vikas Sangal",
+    cllg: "NIT Jaipur",
   },
   {
-    name:"Dr R K Wanchoo",
-    cllg:"Panjab University, Chandigarh"
+    name: "Dr ApurbaDey",
+    cllg: "NIT Durgapur",
   },
   {
-    name:"Dr K B Radhakrishnan",
-    cllg:"SCTCE, Thiruvananthapura"
+    name: "Dr Asim K De",
+    cllg: "University of Calcutta, Kolkata",
   },
   {
-    name:"Dr Rajesh Tayade",
-    cllg:"CSMCRI, Bhavnagar"
+    name: "Dr M Rajasimman",
+    cllg: "Annamalai University, Chidambaram",
   },
   {
-    name:"Dr Rakesh K Rai",
-    cllg:"Ujjain Engineering College, Ujjain"
+    name: "Dr Madhu Agarwal",
+    cllg: "MNIT Jaipur",
   },
   {
-    name:"Dr Ritu Gupta",
-    cllg:"Panjab University, Chandigarh"
+    name: "Dr P Kalaichelvi",
+    cllg: "NIT Trichurapalli",
   },
   {
-    name:"Dr S K Gupta",
-    cllg:"HBTU Kanpur"
+    name: "Dr R K Gupta",
+    cllg: "Thapar University, Patiala",
   },
   {
-    name:"Dr A K Sarma",
-    cllg:"Panjab University, Chandigarh"
+    name: "Dr K B Radhakrishnan",
+    cllg: "SCTCE, Thiruvananthapura",
   },
   {
-    name:"Dr Avinash Thakur",
-    cllg:"SLIET Longowal"
+    name: "Dr Rajesh Tayade",
+    cllg: "CSMCRI, Bhavnagar",
   },
   {
-    name:"Dr SV Satyanarayana",
-    cllg:"JNTU Hyderabad"
+    name: "Dr Rakesh K Rai",
+    cllg: "Ujjain Engineering College, Ujjain",
   },
   {
-    name:"Dr T S K Raunija",
-    cllg:"ISRO, India"
+    name: "Dr Ritu Gupta",
+    cllg: "Panjab University, Chandigarh",
   },
   {
-    name:"Dr U K Mandal",
-    cllg:"GGS I P University, Delhi"
+    name: "Dr Amrit P Toor",
+    cllg: "Panjab University, Chandigarh",
   },
   {
-    name:"Dr Dhananjay Singh",
-    cllg:"IET Lucknow"
+    name: "Dr Avinash Thakur",
+    cllg: "SLIET Longowal",
   },
   {
-    name:"Dr Sushil Kumar Saraswat",
-    cllg:"MBM Jodhpur"
+    name: "Dr SV Satyanarayana",
+    cllg: "JNTU Hyderabad",
   },
-]
+  {
+    name: "Dr T S K Raunija",
+    cllg: "ISRO, India",
+  },
+  {
+    name: "Dr U K Mandal",
+    cllg: "GGS I P University, Delhi",
+  },
+  {
+    name: "Dr Dhananjay Singh",
+    cllg: "IET Lucknow",
+  },
+  {
+    name: "Dr Sushil Kumar Saraswat",
+    cllg: "MBM Jodhpur",
+  },
+];

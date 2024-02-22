@@ -1,120 +1,172 @@
-import { homeimg } from "@/assets";
-import { HorizontalProp, Navbar, VerticalProp } from "@/components";
-import Image from "next/image";
-import { horizontal, verticle } from "@/components/content";
+"use client";
+import { useState } from "react";
+import { motion } from "framer-motion";
+import {
+  HomePage,
+  AdvisoryCommittee,
+  AbstractSubmission,
+  CallForPapers,
+  ContactUs,
+  ImportantDates,
+  OrganizingCommittee,
+  OnlineRegistration,
+  PublicationPartners,
+  ResourcePersons,
+} from "@/components";
+
+const componentMap = {
+  AdvisoryCommittee,
+  AbstractSubmission,
+  HomePage,
+  CallForPapers,
+  ContactUs,
+  ImportantDates,
+  OrganizingCommittee,
+  OnlineRegistration,
+  PublicationPartners,
+  ResourcePersons,
+};
 
 export default function Home() {
-   return (
-    <div className="flex flex-col items-center">
-      <div className="relative w-[100%] h-[488px]">
-        <Image
-          src={homeimg}
-          width={""}
-          height={""}
-          alt="cllg Img"
-          className="absolute w-[100vw] h-[488px] -z-10"
-        />
-        <div className="text-white flex flex-col w-full h-full items-center justify-center">
-          <h1 className="mb-3 text-2xl md:text-4xl font-medium">
-            International conference
-          </h1>
-          <p className="mb-3 text-xl md:text-3xl font-medium">(Self-Sponsored)</p>
-          <p className="mb-3 text-xl md:text-2xl font-medium">On</p>
-          <h1 className="mb-3 text-3xl md:text-5xl font-medium flex flex-wrap justify-center">
-            <span className="text-[#00ff00] px-4">
-              <span className="text-[#ff0000]">S</span>ustainable{" "}
-            </span>
-            <span className="text-[#00ff00] px-4">
-              <span className="text-[#ff0000]">R</span>esearch{" "}
-            </span>
-            in
-            <span className="text-[#00ff00] px-4">
-              <span className="text-[#ff0000]"> E</span>nergy{" "}
-            </span>
-            and
-            <span className="text-[#00ff00] px-4">
-              <span className="text-[#ff0000]"> E</span>nvironment
-            </span>
-            -2024
-          </h1>
-          <p className="mb-3 text-2xl font-medium text-[#ffff00] md:text-white">Jointly Organized by</p>
-          <h2 className="mb-3 text-2xl font-medium text-[#ffff00] text-center">
-            Department of Chemical Engineering & Centre for Energy and
-            Environment
-          </h2>
-          <h3 className="text-gray-800 text-2xl font-semibold">APRIL 5-6, 2024</h3>
-        </div>
-      </div>
+  const [activeComponent, setActiveComponent] = useState("HomePage");
+  const [isOpen, setIsOpen] = useState(false);
 
-      <div className="flex flex-wrap flex-row my-5 mt-12 w-full justify-center">
-        {horizontal.map((items, ind) => (
-          <HorizontalProp
-            img={items.img}
-            heading={items.heading}
-            content={items.content}
-            key={ind}
-          />
-        ))}
-      </div>
-      <div className=" bg-[#EBF3E8] my-7">
-        <div className="mx-[10%] text-justify items-center flex flex-col my-8 text-red-600">
-          <p className="text-4xl font-semibold italic text-blue-500 my-5">
-            {" "}
-            About Conference
-          </p>
-          <p className="my-3 text-lg">
-            The conference on
-            <span className="italic text-red-700">
-              {" "}
-              "Sustainable Research in Energy and the Environment (SREE-2024)"{" "}
-            </span>
-            serves as a platform for scholars, researchers, industry
-            professionals, and policymakers to converge and engage in
-            discussions centered around the critical nexus of energy and
-            environmental sustainability. This gathering aims to foster a
-            collaborative environment where innovative ideas, cutting-edge
-            research, and practical solutions are shared to address the
-            challenges and opportunities in the realms of energy production,
-            consumption, and their impact on the environment. The conference is
-            designed to showcase the latest advancements in sustainable energy
-            technologies, explore strategies for minimizing environmental
-            footprints, and promote interdisciplinary approaches to tackle the
-            pressing issues related to climate change and resource depletion.
-            Participants will have the opportunity to delve into diverse topics
-            such as renewable energy sources, energy efficiency, environmental
-            conservation, and the intersection of technology and policy for
-            sustainable development.
-          </p>
-          <p className="my-3 text-lg">
-            Through keynote presentations, panel discussions, and interactive
-            sessions, the conference seeks to bridge the gap between theory and
-            practice, providing a comprehensive understanding of the current
-            state of sustainable research in energy and the environment.
-            Attendees will gain insights into emerging trends, share
-            experiences, and contribute to the collective effort aimed at
-            creating a more sustainable and resilient future.
-          </p>
-          <p className="my-3 text-lg">
-            <span className="italic text-red-700">
-              Sustainable Research in Energy and the Environment (SREE-2024){" "}
-            </span>{" "}
-            conference is a pivotal event that catalyzes collaboration and
-            knowledge exchange to pave the way for a greener and more
-            sustainable world.
-          </p>
-        </div>
-      </div>
+  const handleButtonClick = (componentName) => {
+    if (componentName !== activeComponent) {
+      setActiveComponent(componentName);
+    }
+  };
 
-      <div className="flex flex-wrap flex-row my-5 w-full px-10 md:px-28 items-center justify-center">
-        {verticle.map((items, ind) => (
-          <VerticalProp
-            img={items.img}
-            heading={items.heading}
-            content={items.content}
-            key={ind}
-          />
-        ))}
-      </div>
+  const handleListItemClick = (item) => {
+    if (item == "Home") {
+      setActiveComponent("HomePage");
+    }
+    const itemNameWithoutSpaces = item.replace(/\s/g, ""); // Remove white spaces
+    handleButtonClick(itemNameWithoutSpaces);
+    setIsOpen(false);
+  };
+
+  const DynamicComponent = componentMap[activeComponent];
+  return (
+    <div>
+      <div className="bg-[rgba(0,123,191,1)] h-fit w-[100%] fixed top-0 px-0 mx-0 flex flex-row items-center justify-between text-white py-2 z-10">
+        <a href="/">
+          <motion.p
+            className="font-normal text-[15pt] ml-5 mr-6 w-fit"
+            whileHover={{ scale: 1.5 }}
+          >
+            SREE-2024
+          </motion.p>
+        </a>
+
+        <ul className="hidden md:visible md:flex flex-row w-[90%] mr-3 justify-between">
+          <div>
+            <motion.li
+              className="md:mx-1 lg:mx-2 hover:text-gray-900"
+              key={`links-${"home"}`}
+              onClick={() => handleListItemClick("HomePage")}
+              whileHover={{ scale: 1.1 }}
+            >
+              {"Home"}
+            </motion.li>
+            {activeComponent === "HomePage" && (
+              <motion.div
+                className="ml-[20%] w-[70%] h-1 bg-white"
+                initial={{ scale: 0 }}
+                animate={{ scale: 1.2 }}
+                transition={{ duration: 0.8 }}
+              />
+            )}
+          </div>
+          {[
+            "Call For Papers",
+            "Abstract Submission",
+            "Important Dates",
+            "Online Registration",
+            "Publication Partners",
+            "Resource Persons",
+            "Organizing Committee",
+            "Advisory Committee",
+            "Contact Us",
+          ].map((item) => (
+            <div key={`links-${item}`}>
+              <motion.li
+                className="md:mx-1 hover:text-gray-900"
+                onClick={() => handleListItemClick(item)}
+                whileHover={{ scale: 1.2 }}
+              >
+                {item}
+                {item==="Abstract Submission" && <sup className="animate-blinking-fast italic text-base ml-1 font-semibold">new</sup>}
+                {activeComponent == item.replace(/\s/g, "") && (
+                  <motion.div
+                    className="ml-[10%] w-[90%] h-1 bg-white"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1.1 }}
+                    transition={{ duration: 0.8 }}
+                  />
+                )}
+              </motion.li>
+            </div>
+          ))}
+        </ul>
+
+        {isOpen ? (
+          <ul className="md:hidden flex flex-col w-fit mr-8">
+            <motion.li
+              className="mr-2 lg:mr-0 font-bold text-red-800"
+              onClick={() => setIsOpen(false)}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{
+                opacity: 1,
+                y: 0,
+                transition: { duration: 0.3, delay: 0.3 },
+              }}
+              exit={{ opacity: 0, y: -20, transition: { duration: 0.5 } }}
+            >
+              X
+            </motion.li>
+            <li
+              className=""
+              key={`links2-${"home"}`}
+              onClick={() => handleListItemClick("HomePage")}
+            >
+              {"Home"}
+            </li>
+            {[
+              "Call For Papers",
+              "Abstract Submission",
+              "Important Dates",
+              "Online Registration",
+              "Publication Partners",
+              "Resource Persons",
+              "Organizing Committee",
+              "Advisory Committee",
+              "Contact Us",
+            ].map((item, ind) => (
+              <motion.li
+                className=""
+                key={`links2-${item}`}
+                onClick={() => handleListItemClick(item)}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 0.3, delay: ind * 0.1 },
+                }}
+                exit={{ opacity: 0, y: -20, transition: { duration: 0.5 } }}
+              >
+                {item}
+                {item==="Abstract Submission" && <sup className="animate-blinking-fast italic text-base ml-1 font-semibold">new</sup>}
+              </motion.li>
+            ))}
+          </ul>
+        ) : (
+          <div className="md:hidden white mr-8" onClick={() => setIsOpen(true)}>
+            ☰
+          </div>
+        )}
+              </div>
+      <DynamicComponent />
     </div>
   );
 }
