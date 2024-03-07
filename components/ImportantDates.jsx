@@ -12,7 +12,7 @@ const ImportantDates = () => {
               Last date of receipt the abstract
             </p>
             <p className="text-3xl my-2 font-medium flex-1 text-right">
-              March 10, 2024
+              March 25, 2024
             </p>
           </div>
           <div className="flex">
@@ -20,7 +20,7 @@ const ImportantDates = () => {
               Intimation of acceptance
             </p>
             <p className="text-3xl my-2 font-medium flex-1 text-right">
-              March 15, 2024
+              March 27, 2024
             </p>
           </div>
           <div className="flex">
@@ -28,7 +28,7 @@ const ImportantDates = () => {
               Last date of Registration
             </p>
             <p className="text-3xl my-2 font-medium flex-1 text-right">
-              March 26, 2024
+              March 28, 2024
             </p>
           </div>
           <div className="flex">

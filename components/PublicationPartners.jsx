@@ -1,4 +1,4 @@
-import { ScopusIndexJournal, v1 } from "@/assets";
+import { ScopusIndexJournal, sci, scie, v1 } from "@/assets";
 import { HeaderComp } from "@/components";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -52,13 +52,50 @@ const PublicationPartners = () => {
             >
               <Image
                 src={ScopusIndexJournal}
-                width={400}
+                width={370}
                 height={500}
-                className="ml-2 px-2 mt-5 mb-10"
+                className="ml-2 px-1 mt-5 mb-10"
                 alt="thomson"
               />
               <p className="px-2 text-xl italic flex justify-center font-semibold">
                 Scopus Index Journal
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ translateY: 100, opacity: 0}}
+              animate={{ translateY: 0, opacity: 1}}
+              transition={{ duration: 1,  delay: 1.6 }}
+              whileHover={{ scale: 1.1 }}
+              className="flex flex-col ml-12 w-[250px] md:w-[420px] rounded-lg hover:border-black border-[1px] border-solid"
+            >
+              <Image
+                src={scie}
+                width={350}
+                height={400}
+                className="ml-2 px-2 mt-5 mb-10"
+                alt="thomson"
+              />
+              <p className="px-2 text-xl italic flex justify-center font-semibold">
+              SCIE index journal
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ translateY: 100, opacity: 0}}
+              animate={{ translateY: 0, opacity: 1}}
+              transition={{ duration: 1,  delay: 2.4 }}
+              whileHover={{ scale: 1.1 }}
+              className="flex flex-col ml-12 w-[250px] md:w-[420px] rounded-lg hover:border-black border-[1px] border-solid"
+            >
+              <Image
+                src={sci}
+                width={350}
+                height={400}
+                className="ml-2 px-2 mt-5 mb-10"
+                alt="thomson"
+              />
+              <p className="px-2 text-xl italic flex justify-center font-semibold">
+              SCI index journal
               </p>
             </motion.div>
           </div>

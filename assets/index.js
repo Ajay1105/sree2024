@@ -45,6 +45,8 @@ import ProfShishirSinha from './ProfShishirSinha.jpg';
 import DrAjayKumarArora from './DrAjayKumarArora.jpg';
 import ProfAjayKumarDalai from './ProfAjayKumarDalai.jpg';
 import ScopusIndexJournal from './ScopusIndexJournal.jpg';
+import scie from './scie.jpg';
+import sci from './sci.jpg';
 
 export {
   homeimg,
@@ -94,4 +96,6 @@ export {
   DrAjayKumarArora,
   ProfAjayKumarDalai,
   ScopusIndexJournal,
+  scie,
+  sci,
 };
